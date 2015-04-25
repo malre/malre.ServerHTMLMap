@@ -1,0 +1,102 @@
+*****************************************************************************
+*   |                                                                  *    |
+*   |                                                                  *    |
+*   |                                                                  *    |
+*   |                            READ ME LISEZ MOI                     *    |                           *
+*   |                    Application Serveur Domestique                *    |
+*   |                   D‚monstration simple d'un deploiement          *    |
+*   |                     PAGE HTML avec image et plug-ins             *    |
+*   |                                                                  *    |
+*   |                                                                  *    |
+*****************************************************************************
+
+            IMPORTANT l'utilisation de cette application demande
+                        une ouverture d'esprit.
+                        ----------------------------
+                        Avoir une connexion Internet
+                        avec un modem dit passerelle
+                        voir cmd avec ipconfig
+                        ----------------------------
+                        Avoir minimum 2 poste Serveur/client
+                        Pour exemple Computer/ Portable
+                                     Portable/ Smartphone
+                        ----------------------------
+                        ConnaŒtre Adresse Ip du serveur
+                        Utiliser Cmd tapez ipconfig
+
+
+   Start application :
+
+   Ouvrir command prompt
+   Commande … connaŒtre
+         - cd nom du dossier  d‚placement dans l'arborescence des dossiers.
+         - cd ..  d‚placement inverse dans l'arborescence des dossiers.
+
+   Cr‚e un dossier Web sur votre disque dur , mettre le dossier web_app
+   Se rendre … ce dossier avec les commandes ‡i dessus.
+
+   ------------------------------------------------------------------------
+
+                        LANCER L'APPLICATION
+                        tapez HtmlServer.exe
+                 Dirigez vous vers votre navigateur
+                   http://localhost:8080/view/test
+
+   -------------------------------------------------------------------------
+
+                   +++++++++++++++++++++++++++++++++++
+                   +                                 +
+                   +                                 +
+                   +  Ouvrir view.html, modifier,    +
+                   +  visualiser.                    +
+                   +                                 +
+                   +                                 +
+                   +++++++++++++++++++++++++++++++++++
+                   -----------------------------------
+
+                      Votre serveur est en activit‚
+
+                      VERIFIER SUR LE POSTE CLIENT
+                      ----------------------------
+
+                      Ouvrir le navigateur entrez
+                     l'adresse ip de votre serveur
+                     exemple :
+                     http://192.168.1.101/view/test
+
+                     -------------------------------
+
+                        Vous pouvez maintenant
+                        ----------------------
+                        faire la commande suivante
+                        ctrl + la touche c
+                        ----------------------
+               Vous venez de fermer votre serveur verifier
+               /////////////////////\\\\\\\\\\\\\\\\\\\\\\
+               |                                         |
+               |    Relancer et verifier les dossiers    |
+               |                                         |
+               |_________________________________________|
+
+
+
+               Arborescences :
+
+                        Votre dossiers:
+                        |_ Web_app
+                                  |_ static
+                                        |_ img  Emplacement des images
+                                        |_ stock_interface Mettre une copy du fichier view
+                                        |_ vrml Utilisation du plug in vrml
+                                        |_ obj  Dossier contenant vos divers
+                                        |_ TicTacToe Plug in java
+                                  |
+                                   \_ test.txt le titre de votre page view
+                                    _ view.html      Page … modifier
+                                    _ HtmlServer.exe ApplicationServer
+                                    _ HtmlServer.rar Code Source de l'application
+                                    _ Lisez moi.txt
+                        
+---------------------------------------------------------------------------------------------------------
+
+

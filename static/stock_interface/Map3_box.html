@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+   <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="//rawgit.com/lvoogdt/Leaflet.awesome-markers/2.0/develop/dist/leaflet.awesome-markers.css">
+   <script src="//rawgithub.com/lvoogdt/Leaflet.awesome-markers/2.0/develop/dist/leaflet.awesome-markers.js"></script>
+
+
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css">
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css">
+   <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+
+   <link rel="stylesheet" href="//birdage.github.io/Leaflet.awesome-markers/dist/leaflet.awesome.rotate.css">
+
+   <script src="https://wrobstory.github.io/leaflet-dvf/leaflet-dvf.markers.min.js"></script>
+   
+   
+   
+
+   <style>
+
+div#d-ang45:hover {
+    width: 120px;
+    height: 30px;
+    -webkit-transform: rotate(-50deg); /* Safari */
+    transform: rotate(-50deg);
+    overflow: visible;
+}
+div#d-ang45 {
+	position: absolute;
+    left: 10px;
+	top: 140px;
+	width: 120px;
+    height: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 15px 50px 30px 5px;
+	-webkit-transform: rotate(-40deg);
+	-moz-transform: rotate(-40deg);
+	transform: rotate(-40deg);
+	overflow: hidden; 
+}
+div#d-ang45_1:hover {
+    width: 120px;
+    height: 30px;
+    -webkit-transform: rotate(-50deg); /* Safari */
+    transform: rotate(-50deg);
+    overflow: visible;
+}
+div#d-ang45_1 {
+	position: absolute;
+    left: 10px;
+	top: 210px;
+	width: 120px;
+    height: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 15px 50px 30px 5px;
+	-webkit-transform: rotate(-40deg);
+	-moz-transform: rotate(-40deg);
+	transform: rotate(-40deg);
+	overflow: hidden; 
+}
+div#d-ang45_2:hover {
+    width: 120px;
+    height: 30px;
+    -webkit-transform: rotate(-50deg); /* Safari */
+    transform: rotate(-50deg);
+    overflow: visible;
+}
+div#d-ang45_2 {
+	position: absolute;
+    left: 10px;
+	top: 280px;
+	width: 120px;
+    height: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 15px 50px 30px 5px;
+	-webkit-transform: rotate(-40deg);
+	-moz-transform: rotate(-40deg);
+	transform: rotate(-40deg);
+	overflow: hidden; 
+}
+div#d-ang45_3:hover {
+    width: 120px;
+    height: 30px;
+    -webkit-transform: rotate(-50deg); /* Safari */
+    transform: rotate(-50deg);
+    overflow: visible;
+}
+div#d-ang45_3 {
+	position: absolute;
+    left: 10px;
+	top: 350px;
+	width: 120px;
+    height: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 15px 50px 30px 5px;
+	-webkit-transform: rotate(-40deg);
+	-moz-transform: rotate(-40deg);
+	transform: rotate(-40deg);
+	overflow: hidden; 
+}
+div#d-ang45_4:hover {
+    width: 120px;
+    height: 30px;
+    -webkit-transform: rotate(-50deg); /* Safari */
+    transform: rotate(-50deg);
+    overflow: visible;
+}
+div#d-ang45_4 {
+	position: absolute;
+    left: 10px;
+	top: 420px;
+	width: 120px;
+    height: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 15px 50px 30px 5px;
+	-webkit-transform: rotate(-40deg);
+	-moz-transform: rotate(-40deg);
+	transform: rotate(-40deg);
+	overflow: hidden; 
+}
+div#d-ang45_5:hover {
+    width: 120px;
+    height: 30px;
+    -webkit-transform: rotate(-50deg); /* Safari */
+    transform: rotate(-50deg);
+    overflow: visible;
+}
+div#d-ang45_5 {
+	position: absolute;
+    left: 10px;
+	top: 490px;
+	width: 120px;
+    height: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 15px 50px 30px 5px;
+	-webkit-transform: rotate(-40deg);
+	-moz-transform: rotate(-40deg);
+	transform: rotate(-40deg);
+	overflow: hidden; 
+}
+div#ang45:hover {
+    width: 120px;
+    height: 30px;
+    -webkit-transform: rotate(50deg); /* Safari */
+    transform: rotate(50deg);
+    overflow: visible;
+}
+div#ang45 {
+	position: absolute;
+    right: 10px;
+	top: 140px;
+	width: 120px;
+    height: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 30px 5px 15px 50px;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	transform: rotate(40deg);
+	overflow: hidden; 
+}
+div#ang45_1:hover {
+    width: 120px;
+    height: 30px;
+    -webkit-transform: rotate(50deg); /* Safari */
+    transform: rotate(50deg);
+    overflow: visible;
+}
+div#ang45_1 {
+	position: absolute;
+    right: 10px;
+	top: 210px;
+	width: 120px;
+    height: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 30px 5px 15px 50px;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	transform: rotate(40deg);
+	overflow: hidden; 
+}
+div#ang45_2:hover {
+    width: 120px;
+    height: 30px;
+    -webkit-transform: rotate(50deg); /* Safari */
+    transform: rotate(50deg);
+    overflow: visible;
+}
+div#ang45_2 {
+	position: absolute;
+    right: 10px;
+	top: 280px;
+	width: 120px;
+    height: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 30px 5px 15px 50px;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	transform: rotate(40deg);
+	overflow: hidden; 
+}
+div#ang45_3:hover {
+    width: 120px;
+    height: 30px;
+    -webkit-transform: rotate(50deg); /* Safari */
+    transform: rotate(50deg);
+    overflow: visible;
+}
+div#ang45_3 {
+	position: absolute;
+    right: 10px;
+	top: 350px;
+	width: 120px;
+    height: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 30px 5px 15px 50px;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	transform: rotate(40deg);
+	overflow: hidden; 
+}
+div#ang45_4:hover {
+    width: 120px;
+    height: 30px;
+    -webkit-transform: rotate(50deg); /* Safari */
+    transform: rotate(50deg);
+    overflow: visible;
+}
+div#ang45_4 {
+	position: absolute;
+    right: 10px;
+	top: 420px;
+	width: 120px;
+    height: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 30px 5px 15px 50px;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	transform: rotate(40deg);
+	overflow: hidden; 
+}
+div#ang45_5:hover {
+    width: 120px;
+    height: 30px;
+    -webkit-transform: rotate(50deg); /* Safari */
+    transform: rotate(50deg);
+    overflow: visible;
+}
+div#ang45_5 {
+	position: absolute;
+    right: 10px;
+	top: 490px;
+	width: 120px;
+    height: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 30px 5px 15px 50px;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	transform: rotate(40deg);
+	overflow: hidden; 
+}
+  html,body {
+    background-color: #fefcc0;
+	
+    border-top: solid 10px #000;
+    color: #333;
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+      #map {
+        position:absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+      }
+h1, h2, h3,
+h4, h5, h6 {
+    color: #000;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h1 {
+    font-size: 2em;
+    text-shadow: 0 0 3px #FF0ccD;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+a {
+    color: #333;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: underline;
+}
+
+    a:link{color:#ff0eeD;}, a:visited{color:#0cc0ff;},
+    a:active, a:hover {
+        color: #333;
+          }
+
+    a:hover {
+        background-color: #c7d1d6;
+    }
+	/* tables
+----------------------------------------------------------*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 0.75em;
+    border: 0 none;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 3;
+    Opera */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+
+th {
+	font-size: 1.2em;
+    text-align: left;
+    border: none 0px;
+    padding-left: 0;
+}
+
+    th a {
+        display: block;
+        position: relative;
+        
+    }
+
+	th a:link, th a:visited, th a:active, th a:hover {
+		color: #333;
+		font-weight: 600;
+		text-decoration: none;
+        padding: 0;
+	}
+
+	th a:hover {
+		color: #000;
+	}
+
+    th.asc a, th.desc a {
+        margin-right: .75em;
+    }
+    
+    th.asc a:after, th.desc a:after {
+		display: block;
+        position: absolute;
+        right: 0em;
+        top: 0;
+        font-size: 0.75em;
+	}
+
+	th.asc a:after {
+		content: '?';
+	}
+
+	th.desc a:after {
+		content: '?';
+	}
+
+td {
+    padding: 0.25em 2em 0.25em 0em;
+    border: 0 none;
+}
+
+tr.pager td {
+    padding: 0 0.25em 0 0;
+}
+header .content-wrapper {
+    padding-top: 20px; 
+}
+    
+footer {
+    clear: both;
+    background-color: #e2e2e2;
+    font-size: .24em;
+    height: 100px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+   </style>
+</head>
+
+<body background="PICT0005.jpg">
+<header></header>
+  <center><h1>Ile de La reunion et la bretagne</h1><hr> <div class="folium-map" id="folium_d48ed3ae28c94e3b822dc07ee87a0d53" style="width: 750px; height: 450px"></div><hr></center>
+<div id="ang45"><a style="text-decoration:none;" href="http://localhost:8888/notebooks/ScriptMatPlot/Script~Folium/BaseMap.ipynb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BaseMap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+<div id="ang45_1"><a style="text-decoration:none;" href="http://localhost/SHPfiles/Map2_box.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Map2_box&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+<div id="ang45_2"><a style="text-decoration:none;" href="http://localhost/SHPfiles/Map_box.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Map1_box&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+<div id="ang45_3"><a style="text-decoration:none;" href="http://localhost:8888/notebooks/ScriptMatPlot/SIG/France.ipynb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;France&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+<div id="ang45_4"><a style="text-decoration:none;" href="
+http://localhost:8888/notebooks/ScriptMatPlot/SIG/DataBaseODBC.ipynb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DataBaseODBC&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+<div id="ang45_5"><a style="text-decoration:none;" href="
+http://localhost:8888/notebooks/ScriptMatPlot/SIG/Shapefile/Shp.ipynb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shapefile&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+<!--Right !-->
+<div id="d-ang45"><a style="text-decoration:none;" href="http://www.w3schools.com/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;w3schools.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+<div id="d-ang45_1"><a style="text-decoration:none;" href="http://fr.wikibooks.org/wiki/Le_langage_HTML/Tableaux">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wikibooks.org&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+<div id="d-ang45_2"><a style="text-decoration:none;" href="http://matplotlib.org/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matplotlib.org&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+<div id="d-ang45_3"><a style="text-decoration:none;" href="http://www.intercarto.com/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;intercarto.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+<div id="d-ang45_4"><a style="text-decoration:none;" href="http://openstreetmapdata.com/data/coastlines">&nbsp;openstreetmapdata&nbsp;&nbsp;</a></div>
+<div id="d-ang45_5"><a style="text-decoration:none;" href="http://srtm.csi.cgiar.org/Index.asp">&nbsp;srtm.csi.cgiar.org&nbsp;</a></div>
+
+   <script>
+
+      
+
+      var base_tile = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.jpg', {
+          maxZoom: 18,
+          minZoom: 1,
+          attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
+      });
+
+      var baseLayer = {
+        "Base Layer": base_tile
+      };
+
+      /*
+      addition of the wms layers
+      */
+      /*
+      addition of the tile layers
+      */
+        /*
+      list of layers to be added
+      */
+      var layer_list = {
+      
+      };
+
+      /*
+      Bounding box.
+      */
+      var southWest = L.latLng(-90, -180),
+          northEast = L.latLng(90, 180),
+          bounds = L.latLngBounds(southWest, northEast);
+
+      /*
+      Creates the map and adds the selected layers
+      */
+      var map = L.map('folium_d48ed3ae28c94e3b822dc07ee87a0d53', {
+                                       center:[-20.914722, 55.496389],
+                                       zoom: 13,
+                                       maxBounds: bounds,
+                                       layers: [base_tile]
+                                     });
+
+      L.control.layers(baseLayer, layer_list).addTo(map);
+
+      //cluster group
+      var clusteredmarkers = L.markerClusterGroup();
+      //section for adding clustered markers
+      
+      var marker_1_icon = L.AwesomeMarkers.icon({ icon: 'remove-sign',markerColor: 'blue',prefix: 'glyphicon',extraClasses: 'fa-rotate-0'});
+      var marker_1 = L.marker([-20.914722, 
+							55.496389],
+							{'icon':marker_1_icon}
+							);
+      marker_1.bindPopup("La Bretagne");
+      marker_1._popup.options.maxWidth = 300;
+      clusteredmarkers.addLayer(marker_1)
+      
+      var marker_2_icon = L.AwesomeMarkers.icon({ icon: 'remove-sign',markerColor: 'blue',prefix: 'glyphicon',extraClasses: 'fa-rotate-0'});
+      var marker_2 = L.marker([-20.9193867, 
+							55.485309],
+							{'icon':marker_2_icon}
+							);
+      marker_2.bindPopup("Sainte Clotilde");
+      marker_2._popup.options.maxWidth = 300;
+      clusteredmarkers.addLayer(marker_2)
+      
+      var marker_3_icon = L.AwesomeMarkers.icon({ icon: 'remove-sign',markerColor: 'blue',prefix: 'glyphicon',extraClasses: 'fa-rotate-0'});
+      var marker_3 = L.marker([-20.9104216, 
+							55.4831243],
+							{'icon':marker_3_icon}
+							);
+      marker_3.bindPopup("Moufia");
+      marker_3._popup.options.maxWidth = 300;
+      clusteredmarkers.addLayer(marker_3)
+      
+      //add the clustered markers to the group anyway
+      map.addLayer(clusteredmarkers);
+
+      
+
+      
+      var circle_1 = L.circle([-20.8954786, 55.5143354], 650, {
+                            color: '#31f6cc',
+                            fillColor: '#3f86cc',
+                            fillOpacity: 0.6
+                            });
+      circle_1.bindPopup("Zone Aéroportuaire de Gillot");
+      circle_1._popup.options.maxWidth = 300;
+      map.addLayer(circle_1)
+      
+      var polygon_1 = new L.RegularPolygonMarker(new L.LatLng(-20.8867308, 55.4774282), {
+    color: 'black',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#f3cb5e',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 15
+});
+      polygon_1.bindPopup("N2");
+      polygon_1._popup.options.maxWidth = 300;
+      map.addLayer(polygon_1)
+      
+
+      
+      var latLngs = [ [-20.884398, 55.4673626],  [-20.8846896, 55.4703277],  [-20.8862934, 55.4753215],  [-20.8855644, 55.4790668],  [-20.8861476, 55.4829682],  [-20.8868766, 55.490771],  [-20.885856, 55.4977935],  [-20.885856, 55.4982617],  [-20.8862934, 55.4987298],  [-20.8868766, 55.4998222],  [-20.8889178, 55.5006025],  [-20.8947496, 55.5021631],  [-20.8962076, 55.5034115],  [-20.8963534, 55.50466],  [-20.8975197, 55.5151157],  [-20.9029138, 55.5375877],  [-20.8845438, 55.4670505],  [-20.8857102, 55.4689232],  [-20.8855644, 55.479535],  [-20.8867308, 55.4868696], ];
+var line_1 = L.polyline(latLngs,{
+color: '#FD0cc2',
+weight: 5,
+
+});
+      map.addLayer(line_1);
+      
+
+      
+
+      var popup = L.popup();
+
+function latLngPop(e) {
+    popup.setLatLng(e.latlng)
+         .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                     "<br>Longitude: " + e.latlng.lng.toFixed(4))
+         .openOn(map);
+}
+
+map.on('click', latLngPop);
+
+      
+
+   </script>
+   <center><table><td><tr><a href="http://www.sigcours.com/fr/arcgis.html">sigcours.com</a></tr></td>
+   <td><tr><a href="http://www.statsilk.com/maps/download-free-shapefile-maps">statsilk.com</a></tr></td>
+   <td><tr><a href="http://www.portailsig.org/">portailsig.org</a></tr></td>
+   <td><tr><a href="https://www.geocaching.com/play/geotours">geocaching.com</a></tr></td>
+   <td><tr><a href="http://map-generator.net/en#">map-generator.net</a></tr></td>
+      <td><tr><a href="http://irem.univ-reunion.fr/">irem.univ-reunion.fr</a></tr></td>
+	  <td><tr><a href="http://geoscript.org/">geoscript.org</a></tr></td>
+   </table>
+<footer>Ile de la reunion & la bretagne</footer></center>
+</body>
