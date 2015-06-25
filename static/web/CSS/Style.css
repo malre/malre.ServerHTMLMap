@@ -1,0 +1,266 @@
+/* 
+    Document   : Style
+    Created on : 4 juin 2015, 09:22:02
+    Author     : BlendDead
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+   text-align: center;
+   font-size:12px; color:#000066; font-family:Tahoma; 
+   background: -moz-linear-gradient(-45deg,  rgba(229,227,237,0.14) 0%, rgba(32,124,202,0.27) 40%, rgba(32,124,202,0.31) 51%, rgba(32,124,202,0.33) 58%, rgba(32,124,202,0.35) 63%, rgba(128,116,155,0.39) 75%, rgba(128,116,155,0.42) 84%, rgba(215,222,226,0.44) 91%, rgba(215,222,226,0.47) 100%); /* FF3.6+ */
+   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(229,227,237,0.14)), color-stop(40%,rgba(32,124,202,0.27)), color-stop(51%,rgba(32,124,202,0.31)), color-stop(58%,rgba(32,124,202,0.33)), color-stop(63%,rgba(32,124,202,0.35)), color-stop(75%,rgba(128,116,155,0.39)), color-stop(84%,rgba(128,116,155,0.42)), color-stop(91%,rgba(215,222,226,0.44)), color-stop(100%,rgba(215,222,226,0.47))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(229,227,237,0.14) 0%,rgba(32,124,202,0.27) 40%,rgba(32,124,202,0.31) 51%,rgba(32,124,202,0.33) 58%,rgba(32,124,202,0.35) 63%,rgba(128,116,155,0.39) 75%,rgba(128,116,155,0.42) 84%,rgba(215,222,226,0.44) 91%,rgba(215,222,226,0.47) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(229,227,237,0.14) 0%,rgba(32,124,202,0.27) 40%,rgba(32,124,202,0.31) 51%,rgba(32,124,202,0.33) 58%,rgba(32,124,202,0.35) 63%,rgba(128,116,155,0.39) 75%,rgba(128,116,155,0.42) 84%,rgba(215,222,226,0.44) 91%,rgba(215,222,226,0.47) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(229,227,237,0.14) 0%,rgba(32,124,202,0.27) 40%,rgba(32,124,202,0.31) 51%,rgba(32,124,202,0.33) 58%,rgba(32,124,202,0.35) 63%,rgba(128,116,155,0.39) 75%,rgba(128,116,155,0.42) 84%,rgba(215,222,226,0.44) 91%,rgba(215,222,226,0.47) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(229,227,237,0.14) 0%,rgba(32,124,202,0.27) 40%,rgba(32,124,202,0.31) 51%,rgba(32,124,202,0.33) 58%,rgba(32,124,202,0.35) 63%,rgba(128,116,155,0.39) 75%,rgba(128,116,155,0.42) 84%,rgba(215,222,226,0.44) 91%,rgba(215,222,226,0.47) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24e5e3ed', endColorstr='#78d7dee2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 0.75em;
+    border: 0 none;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 3;
+    Opera */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+th {
+	font-size: 1.2em;
+    text-align: left;
+    border: none 0px;
+    padding-left: 0;
+}
+
+    th a {
+        display: block;
+        position: relative;
+        
+    }
+
+	th a:link, th a:visited, th a:active, th a:hover {
+		color: #333;
+		font-weight: 600;
+		text-decoration: none;
+        padding: 0;
+	}
+
+	th a:hover {
+		color: #000;
+	}
+
+    th.asc a, th.desc a {
+        margin-right: .75em;
+    }
+    
+    th.asc a:after, th.desc a:after {
+		display: block;
+        position: absolute;
+        right: 0em;
+        top: 0;
+        font-size: 0.75em;
+	}
+
+	th.asc a:after {
+		content: '?';
+	}
+
+	th.desc a:after {
+		content: '?';
+	}
+
+td {
+    padding: 0.25em 2em 0.25em 0em;
+    border: 0 none;
+}
+
+tr.pager td {
+    padding: 0 0.25em 0 0;
+}
+header .content-wrapper {
+    padding-top: 20px; 
+}
+
+span#coca{
+    top: 50px;
+    left: 120px;
+    background-image: url(CSS/images/cocacola-3.jpg);
+}
+.banner{
+margin: 0;
+	padding: 0;
+	background: url(CSS/image/cocacola-3.jpg) no-repeat ;
+	top: 0px;
+        left: 10px;
+}
+        
+A:link {font-weight:bold; color:#FFFFF6; text-shadow: 2px 0px 9px #7c7;
+text-decoration:none}
+A:visited {color:#000066; font-weight: initial; text-decoration:none}
+A:active {font-weight:normal; text-decoration:none}
+A:hover {font-weight:normal; color:#FF6600; font-size:12px; text-shadow: 0px 0px 9px #777;
+ text-decoration:none}
+P {margin-top:0px; margin-bottom:12px; color:#000000; font-family:Tahoma}
+PRE {border-right:#f0f0e0 1px solid; padding-right:5px; border-top:#f0f0e0 1px solid; margin-top:-5px; padding-left:5px; font-size:x-small; padding-bottom:5px; border-left:#f0f0e0 1px solid; padding-top:5px; border-bottom:#f0f0e0 1px solid; font-family:Courier New; background-color:#e5e5cc}
+TD {font-size:12px; color:#000066; font-family:Tahoma /* IE6-9 fallback on horizontal gradient */
+}
+H2 {border-top: #003366 1px solid; margin-top:25px; font-weight:bold; font-size:1.5em; margin-bottom:10px; margin-left:-15px; color:#003366}
+H3 {margin-top:10px; font-size: 1.1em; margin-bottom: 10px; margin-left: -15px; color: #000000}
+UL {
+    list-style: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+    filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2,OffY=2,Color='#d1edf0',Positive='true');
+}
+OL {margin-top:10px; margin-left:20px}
+LI {margin-top:10px; font-weight: bold; color: #FFFFFF; background-color:#ecd2Fd; filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2,OffY=2,Color='#FFFFFF',Positive='true'); filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr='#fee280',EndColorStr='#B8B8FF');
+background: -moz-linear-gradient(top,  rgba(229,227,237,0.14) 0%, rgba(32,124,202,0.21) 22%, rgba(32,124,202,0.27) 40%, rgba(78,147,142,0.31) 51%, rgba(32,124,202,0.33) 58%, rgba(32,124,202,0.35) 63%, rgba(128,116,155,0.39) 75%, rgba(128,116,155,0.42) 84%, rgba(215,222,226,0.44) 91%, rgba(215,222,226,0.47) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(229,227,237,0.14)), color-stop(22%,rgba(32,124,202,0.21)), color-stop(40%,rgba(32,124,202,0.27)), color-stop(51%,rgba(78,147,142,0.31)), color-stop(58%,rgba(32,124,202,0.33)), color-stop(63%,rgba(32,124,202,0.35)), color-stop(75%,rgba(128,116,155,0.39)), color-stop(84%,rgba(128,116,155,0.42)), color-stop(91%,rgba(215,222,226,0.44)), color-stop(100%,rgba(215,222,226,0.47))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(229,227,237,0.14) 0%,rgba(32,124,202,0.21) 22%,rgba(32,124,202,0.27) 40%,rgba(78,147,142,0.31) 51%,rgba(32,124,202,0.33) 58%,rgba(32,124,202,0.35) 63%,rgba(128,116,155,0.39) 75%,rgba(128,116,155,0.42) 84%,rgba(215,222,226,0.44) 91%,rgba(215,222,226,0.47) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(229,227,237,0.14) 0%,rgba(32,124,202,0.21) 22%,rgba(32,124,202,0.27) 40%,rgba(78,147,142,0.31) 51%,rgba(32,124,202,0.33) 58%,rgba(32,124,202,0.35) 63%,rgba(128,116,155,0.39) 75%,rgba(128,116,155,0.42) 84%,rgba(215,222,226,0.44) 91%,rgba(215,222,226,0.47) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(229,227,237,0.14) 0%,rgba(32,124,202,0.21) 22%,rgba(32,124,202,0.27) 40%,rgba(78,147,142,0.31) 51%,rgba(32,124,202,0.33) 58%,rgba(32,124,202,0.35) 63%,rgba(128,116,155,0.39) 75%,rgba(128,116,155,0.42) 84%,rgba(215,222,226,0.44) 91%,rgba(215,222,226,0.47) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(229,227,237,0.14) 0%,rgba(32,124,202,0.21) 22%,rgba(32,124,202,0.27) 40%,rgba(78,147,142,0.31) 51%,rgba(32,124,202,0.33) 58%,rgba(32,124,202,0.35) 63%,rgba(128,116,155,0.39) 75%,rgba(128,116,155,0.42) 84%,rgba(215,222,226,0.44) 91%,rgba(215,222,226,0.47) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24e5e3ed', endColorstr='#78d7dee2',GradientType=0 ); /* IE6-9 */
+}
+b{
+   font-size: 8em;
+   font-weight: bold;
+   color: #7f7f7e;
+   margin: 40px 4px 30px;
+   text-align: center;
+}
+h1{
+   font-size: 4em;
+   font-weight: bold;
+   color: #74c7e7;
+   margin: 40px 0px 70px;
+   text-align: center;
+}
+
+.gwt-Button{ 
+   font-size: 110%; 
+   font-weight: bold;
+   width:260px;
+   height:50px;
+}
+.gwt-Big-Text{ 
+   font-size:150%;
+}
+.title { 
+   font-size: 60.5px;
+   color: #7ddF77;
+   padding: 12px 14px 12px 18px;
+   text-shadow: 2px 10px 9px #7c8;
+   
+    font-family:Tahoma; 
+    font-weight:bold; color:#FFFFF6; 
+}
+
+.gwt-DialogBox .Caption {
+   background: #eff8e3 url(images/cocacola.jpg) repeat-x 0px -2003px;
+   padding: 2px 4px 2px 8px;
+   cursor: default;
+   border-bottom: 1px solid #bbbbbb;
+   border-top: 2px solid #d0e4f6;
+}
+
+.gwt-DialogBox .dialogContent {
+}
+
+.gwt-DialogBox .dialogMiddleCenter {
+   padding: 3px;
+   background: white;
+}
+
+.gwt-DialogBox .dialogBottomCenter {
+   background: url(images/hborder.png) repeat-x 0px -4px;
+   -background: url(images/hborder_ie6.png) repeat-x 0px -4px;
+}
+
+.gwt-DialogBox .dialogMiddleLeft {
+   background: url(images/vborder.png) repeat-y;
+}
+
+.gwt-DialogBox .dialogMiddleRight {
+   background: url(images/vborder.png) repeat-y -4px 0px;
+   -background: url(images/vborder_ie6.png) repeat-y -4px 0px;
+}
+
+.gwt-DialogBox .dialogTopLeftInner {
+   width: 5px;
+   zoom: 1;
+}
+
+.gwt-DialogBox .dialogTopRightInner {
+   width: 8px;
+   zoom: 1;
+}
+
+.gwt-DialogBox .dialogBottomLeftInner {
+   width: 5px;
+   height: 8px;
+   zoom: 1;
+}
+
+.gwt-DialogBox .dialogBottomRightInner {
+   width: 5px;
+   height: 8px;
+   zoom: 1;
+}
+
+.gwt-DialogBox .dialogTopLeft {
+   background: url(images/corner.png) no-repeat -13px 0px;
+   -background: url(images/corner_ie6.png) no-repeat -13px 0px;
+}
+
+.gwt-DialogBox .dialogTopRight {
+   background: url(images/corner.png) no-repeat -18px 0px;
+   -background: url(images/corner_ie6.png) no-repeat -18px 0px;
+}
+
+.gwt-DialogBox .dialogBottomLeft {
+   background: url(images/corner.png) no-repeat 0px -15px;
+   -background: url(images/corner_ie6.png) no-repeat 0px -15px;
+}
+
+.gwt-DialogBox .dialogBottomRight {
+   background: url(images/corner.png) no-repeat -5px -15px;
+   -background: url(images/corner_ie6.png) no-repeat -5px -15px;
+}
+
+html>body .gwt-DialogBox {
+}
+
+* html .gwt-DialogBox .dialogTopLeftInner {
+   width: 5px;
+   overflow: hidden;
+}
+
+* html .gwt-DialogBox .dialogTopRightInner {
+   width: 8px;
+   overflow: hidden;
+}
+
+* html .gwt-DialogBox .dialogBottomLeftInner {
+   width: 5px;
+   height: 8px;
+   overflow: hidden;
+}
+
+* html .gwt-DialogBox .dialogBottomRightInner {
+   width: 8px;
+   height: 8px;
+   overflow: hidden;
+}
+
